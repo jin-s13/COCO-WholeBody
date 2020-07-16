@@ -99,7 +99,7 @@ We build WBF & WBH by extracting cropped face & hand images and annotations from
 
 ## Citation
 
-If you find this dataset in your research, please cite this project.
+If you use this dataset in your project, please cite this paper.
 
 ```
 @inproceedings{jin2020whole,
