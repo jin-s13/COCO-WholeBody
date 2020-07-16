@@ -3,7 +3,7 @@
 This is the official repo for ECCV2020 paper ["Whole-Body Human Pose Estimation in the Wild"]. 
 The repo contains COCO-WholeBody annotations proposed in this paper.
 
-### What is COCO-WholeBody? 
+## What is COCO-WholeBody? 
 
 COCO-WholeBody dataset is the first large-scale benchmark for whole-body pose estimation. 
 It is an extension of ["COCO 2017 dataset"](https://cocodataset.org/#keypoints-2017) with the same train/val split as COCO.
@@ -16,7 +16,14 @@ For each person, we annotate 4 types of bounding boxes (person box, face box, le
 
 <img src="imgs/Fig2_anno.png" width = "500" height = "600">
 
-### Compare with other popular datasets.
+## Download
+
+Images can be downloaded from ["COCO 2017 dataset"](https://cocodataset.org/#keypoints-2017).
+
+COCO-WholeBody annotations for ["Train"](https://drive.google.com/file/d/1thErEToRbmM9uLNi1JXXfOsaS5VK2FXf/view?usp=sharing) / ["Validation"](https://drive.google.com/file/d/1N6VgwKnj8DeyGXCvp1eYgNbRmw6jdfrb/view?usp=sharing) (Google Drive).
+
+
+## Compare with other popular datasets.
 
 Overview of some popular public datasets for 2D keypoint estimation in RGB images. 
 Kpt stands for keypoints, and \#Kpt means the annotated number. 
@@ -44,7 +51,7 @@ Kpt stands for keypoints, and \#Kpt means the annotated number.
 | COCO-WholeBody   | 200K   | 133   | ✔️   | ✔️       | ✔️       | ✔️       | ✔️       | ✔️        | ✔️       | 250K  |
 
 
-### COCO-WholeBody Benchmark
+## COCO-WholeBody Benchmark
 
 Whole-body pose estimation results on our WholeBody benchmark.
 
@@ -62,7 +69,7 @@ Whole-body pose estimation results on our WholeBody benchmark.
 |ZoomNet        | 0.743 | 0.802 | 0.798 | 0.869 | 0.623 | 0.701 | 0.401 | 0.498 | 0.541 | 0.658 |
 
 
-### Pre-training on COCO-WholeBody for face/hand keypoint estimation
+## Pre-training on COCO-WholeBody for face/hand keypoint estimation
 
 WholeBody-Face (WBF) & WholeBody-Hand (WBH) are subsets of COCO-WholeBody.
 
