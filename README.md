@@ -14,17 +14,7 @@ Here is an example of one annotated image.
 
 For each person, we annotate 4 types of bounding boxes (person box, face box, left-hand box, and right-hand box) and 133 keypoints (17 for body, 6 for feet, 68 for face and 42 for hands). The face/hand box is defined as the minimal bounding rectangle of the keypoints. The keypoint annotations are illustrated as follows.
 
-
 <img src="imgs/Fig2_anno.png" width = "500" height = "600">
-
-
-To measure the annotation quality, we also had 3 annotators to label the same batch of 500 images for face/hand/foot keypoints. 
-The standard deviation of the human annotation is calculated for each keypoint, which is used to calculate the normalized factor of whole-body keypoint for evaluation. 
-For ``17 body keypoints'', we directly use the standard deviation of COCO.
-
-
-<img src="imgs/Fig3_dev.png" width = "400" height = "400">
-
 
 ### Compare with other popular datasets.
 
