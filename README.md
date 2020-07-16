@@ -5,9 +5,8 @@ The repo contains COCO-WholeBody annotations proposed in this paper.
 
 ### What is COCO-WholeBody? 
 
-COCO-WholeBody is the first large-scale benchmark for whole-body pose estimation. 
-It has manual annotations on the entire human body, including 133 dense landmarks with 68 on the face, 42 on hands and 23 on the body and feet.
-The COCO-WholeBody dataset is an extension of ["COCO 2017 dataset"](https://cocodataset.org/#keypoints-2017). We use the same train/val split as COCO.
+COCO-WholeBody dataset is the first large-scale benchmark for whole-body pose estimation. 
+It is an extension of ["COCO 2017 dataset"](https://cocodataset.org/#keypoints-2017) with the same train/val split as COCO.
 
 Here is an example of one annotated image.
 <img src="imgs/Fig1_example.png" width = "800" height = "400">
@@ -86,7 +85,6 @@ We build WBF & WBH by extracting cropped face & hand images and annotations from
 | DCFE [25]| w/3D | 2.76 | 5.22 | 3.24 | 3.88 |
 | LAB [14]| w/Boundary | 2.98 | 5.19 | 3.49 | - |
 | HRNet [26]| -  |2.87 | 5.15 | 3.32 | 3.85 |
-| *HRNet-Ours | WBF | 4.61 | 7.50 | 5.17 | 5.66 |
 | HRNet-Ours | - | 2.89 | 5.15 | 3.33 | 3.91 |
 | HRNet-Ours | WBF | 2.84 | 4.73 | 3.21 | 3.68 |
 
