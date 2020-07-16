@@ -6,7 +6,7 @@ The repo contains COCO-WholeBody annotations proposed in this paper.
 ## What is COCO-WholeBody? 
 
 COCO-WholeBody dataset is the first large-scale benchmark for whole-body pose estimation. 
-It is an extension of ["COCO 2017 dataset"](https://cocodataset.org/#keypoints-2017) with the same train/val split as COCO.
+It is an extension of [COCO 2017 dataset](https://cocodataset.org/#keypoints-2017) with the same train/val split as COCO.
 
 Here is an example of one annotated image.
 <img src="imgs/Fig1_example.png" width = "800" height = "400">
@@ -18,9 +18,9 @@ For each person, we annotate 4 types of bounding boxes (person box, face box, le
 
 ## Download
 
-Images can be downloaded from ["COCO 2017 dataset"](https://cocodataset.org/#keypoints-2017).
+Images can be downloaded from [COCO 2017 website](https://cocodataset.org/#keypoints-2017).
 
-COCO-WholeBody annotations for ["Train"](https://drive.google.com/file/d/1thErEToRbmM9uLNi1JXXfOsaS5VK2FXf/view?usp=sharing) / ["Validation"](https://drive.google.com/file/d/1N6VgwKnj8DeyGXCvp1eYgNbRmw6jdfrb/view?usp=sharing) (Google Drive).
+COCO-WholeBody annotations for [Train](https://drive.google.com/file/d/1thErEToRbmM9uLNi1JXXfOsaS5VK2FXf/view?usp=sharing) / [Validation](https://drive.google.com/file/d/1N6VgwKnj8DeyGXCvp1eYgNbRmw6jdfrb/view?usp=sharing) (Google Drive).
 
 
 ## Compare with other popular datasets.
@@ -31,24 +31,24 @@ Kpt stands for keypoints, and \#Kpt means the annotated number.
 
 |DataSet           | Images | \#Kpt | Wild | Body Box | Hand Box | Face Box | Body Kpt | Hand Kpt | Face Kpt | Total |
 |----------------- | ------ | ----- | ---- | -------- | -------- | -------- | -------- | -------- | -------- | ------|
-| MPII [1]         | 25K    | 16    | ✔️   |  ✔️      |          | *        | ✔️       |          |          | 40K   |
-| MPII-TRB [2]     | 25K    | 40    | ✔️   |  ✔️      |          | *        | ✔️       |          |          | 40K   |
-| CrowdPose [3]    | 20K    | 14    | ✔️   |  ✔️      |          |          | ✔️       |          |          | 80K   |
-| PoseTrack [4]    | 23K    | 15    | ✔️   |  ✔️      |          |          | ✔️       |          |          | 150K  |
-| AI Challenger [5]| 300K   | 14    | ✔️   |  ✔️      |          |          | ✔️       |          |          | 700K  |
-| COCO [6]         | 200K   | 17    | ✔️   |  ✔️      |          | *        | ✔️       |          |          | 250K  |
-| OneHand10K [7]   | 10K    | 21    | ✔️   |          | ✔️       |          |          | ✔️       |          | -     |
-| SynthHand [8]    | 63K    | 21    |      |          | ✔️       |          |          | ✔️       |          | -     |
-| RHD [9]          | 41K    | 21    |      |          | ✔️       |          |          | ✔️       |          | -     |
-| FreiHand [10]    | 130K   | 21    |      |          |          |          |          | ✔️       |          | -     |
-| MHP [11]         | 80K    | 21    |      |          | ✔️       |          |          | ✔️       |          | -     |
-| GANerated [12]   | 330K   | 21    |      |          |          |          |          | ✔️       |          | -     |
-| Panoptic [13]    | 15K    | 21    |      |          | ✔️       |          |          | ✔️       |          | -     |
-| WFLW [14]        | 10K    | 98    | ✔️   |          |          | ✔️       |          |          | ✔️       | -     |
-| AFLW [15]        | 25K    | 19    | ✔️   |          |          | ✔️       |          |          | ✔️       | -     |
-| COFW [16]        | 1852   | 29    | ✔️   |          |          | ✔️       |          |          | ✔️       | -     |
-| 300W [17]        | 3837   | 68    | ✔️   |          |          | ✔️       |          |          | ✔️       | -     |
-| COCO-WholeBody   | 200K   | 133   | ✔️   | ✔️       | ✔️       | ✔️       | ✔️       | ✔️        | ✔️       | 250K  |
+| MPII [1]         | 25K    | 16    |   ✔️  |    ✔️     |          |    *     |    ✔️     |          |          | 40K   |
+| MPII-TRB [2]     | 25K    | 40    |   ✔️  |    ✔️     |          |    *     |    ✔️     |          |          | 40K   |
+| CrowdPose [3]    | 20K    | 14    |   ✔️  |    ✔️     |          |          |    ✔️     |          |          | 80K   |
+| PoseTrack [4]    | 23K    | 15    |   ✔️  |    ✔️     |          |          |    ✔️     |          |          | 150K  |
+| AI Challenger [5]| 300K   | 14    |   ✔️  |    ✔️     |          |          |    ✔️     |          |          | 700K  |
+| COCO [6]         | 200K   | 17    |   ✔️  |    ✔️     |          |    *     |    ✔️     |          |          | 250K  |
+| OneHand10K [7]   | 10K    | 21    |   ✔️  |          |    ✔️     |          |          |    ✔️     |          | -     |
+| SynthHand [8]    | 63K    | 21    |      |          |    ✔️     |          |          |    ✔️     |          | -     |
+| RHD [9]          | 41K    | 21    |      |          |    ✔️     |          |          |    ✔️     |          | -     |
+| FreiHand [10]    | 130K   | 21    |      |          |          |          |          |    ✔️     |          | -     |
+| MHP [11]         | 80K    | 21    |      |          |    ✔️     |          |          |    ✔️     |          | -     |
+| GANerated [12]   | 330K   | 21    |      |          |          |          |          |    ✔️     |          | -     |
+| Panoptic [13]    | 15K    | 21    |      |          |    ✔️     |          |          |    ✔️     |          | -     |
+| WFLW [14]        | 10K    | 98    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
+| AFLW [15]        | 25K    | 19    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
+| COFW [16]        | 1852   | 29    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
+| 300W [17]        | 3837   | 68    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
+| COCO-WholeBody   | 200K   | 133   |   ✔️  |   ✔️      |    ✔️     |    ✔️     |    ✔️     |    ✔️     |    ✔️     | 250K  |
 
 
 ## COCO-WholeBody Benchmark
@@ -75,23 +75,23 @@ WholeBody-Face (WBF) & WholeBody-Hand (WBH) are subsets of COCO-WholeBody.
 
 We build WBF & WBH by extracting cropped face & hand images and annotations from COCO-WholeBody.
 
-| Method | extra. |comm.  ↓ | chall. ↓ | full ↓ | test ↓ |
-|--------| ------| ----- | ----- |--------| ------|
-| RCN [23]| - | 4.67 | 8.44 | 5.41 | - |
-| DAN [24]| - | 3.19 | 5.24 | 3.59 | 4.30 |
-| DCFE [25]| w/3D | 2.76 | 5.22 | 3.24 | 3.88 |
-| LAB [14]| w/Boundary | 2.98 | 5.19 | 3.49 | - |
-| HRNet [26]| -  |2.87 | 5.15 | 3.32 | 3.85 |
-| HRNet-Ours | - | 2.89 | 5.15 | 3.33 | 3.91 |
-| HRNet-Ours | WBF | 2.84 | 4.73 | 3.21 | 3.68 |
+|  Method    |   extra.   |  comm.↓ | chall.↓ | full ↓ | test ↓ |
+|------------| -----------| ------- | ------- |--------| ------ |
+| RCN [23]   | -          |  4.67   |  8.44   |  5.41  |  -     |
+| DAN [24]   | -          |  3.19   |  5.24   |  3.59  |  4.30  |
+| DCFE [25]  | w/3D       |  2.76   |  5.22   |  3.24  |  3.88  |
+| LAB [14]   | w/Boundary |  2.98   |  5.19   |  3.49  |  -     |
+| HRNet [26] | -          |  2.87   |  5.15   |  3.32  |  3.85  |
+| HRNet-Ours | -          |  2.89   |  5.15   |  3.33  |  3.91  |
+| HRNet-Ours | WBF        |  2.84   |  4.73   |  3.21  |  3.68  |
 
 
-|Train-set | Test-set | EPE ↓| NME ↓ |
-|--------| ------| ----- | ----- |
-| CMU Panoptic [13] | CMU Panoptic [13]| 7.49 | 0.68 |
-| WBH → CMU Panoptic [13] | CMU Panoptic [13]| 7.00 |  0.63  |
-| WBH | WBH | 2.76 | 6.66 |
-| CMU Panoptic [13] → WBH | WBH | 2.70 | 6.49 |
+|        Train-set        | Test-set         | EPE ↓ | NME ↓ |
+|------------------------ | -----------------| ----- | ----- |
+| CMU Panoptic [13]       | CMU Panoptic [13]| 7.49  | 0.68  |
+| WBH → CMU Panoptic [13] | CMU Panoptic [13]| 7.00  | 0.63  |
+| WBH                     | WBH              | 2.76  | 6.66  |
+| CMU Panoptic [13] → WBH | WBH              | 2.70  | 6.49  |
 
 
 ## Citation
