@@ -16,12 +16,25 @@ For each person, we annotate 4 types of bounding boxes (person box, face box, le
 
 <img src="imgs/Fig2_anno.png" width = "500" height = "600">
 
-## Download
+## How to Use?
 
+### Download
 Images can be downloaded from [COCO 2017 website](https://cocodataset.org/#keypoints-2017).
 
 COCO-WholeBody annotations for [Train](https://drive.google.com/file/d/1thErEToRbmM9uLNi1JXXfOsaS5VK2FXf/view?usp=sharing) / [Validation](https://drive.google.com/file/d/1N6VgwKnj8DeyGXCvp1eYgNbRmw6jdfrb/view?usp=sharing) (Google Drive).
 
+### Annotation Format
+The data format is defined in [DATA_FORMAT](data_format.md).
+
+
+### Evaluation
+We provide evaluation tools for COCO-WholeBody dataset. Our evaluation tools is developed based on [@cocodataset/cocoapi](https://github.com/cocodataset/cocoapi). 
+
+We also provide an example groundtruth file (example_gt.json) and an example pred file (example_pred.json). 
+
+Evaluate on COCO-WholeBody by running the following line:
+
+`python evaluation/evaluation_wholebody.py --gt_file evaluation/example_gt.json --res_file evaluation/example_pred.json`
 
 ## Compare with other popular datasets.
 
