@@ -162,7 +162,6 @@ class MYeval_righthand:
         ious = np.zeros((len(dts), len(gts)))
         sigmas = np.array([0.29, 0.22, 0.35, 0.37, 0.47, 0.26, 0.25, 0.24, 0.35, 0.18, 0.24,
                            0.22, 0.26, 0.17, 0.21, 0.21, 0.32, 0.2, 0.19, 0.22, 0.31]) / 10.0
-        sigmas = sigmas * 2
         vars = (sigmas * 2)**2
         k = len(sigmas)
         # compute oks between each detection and ground truth object
