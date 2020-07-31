@@ -36,6 +36,13 @@ Evaluate on COCO-WholeBody by running the following line:
 
 `python evaluation/evaluation_wholebody.py --gt_file evaluation/example_gt.json --res_file evaluation/example_pred.json`
 
+### Terms of Use
+
+1. We do not own the copyright of the images. Use of the images must abide by the [Flickr Terms of Use](https://www.flickr.com/creativecommons/). The users of the images accept full responsibility for the use of the dataset, including but not limited to the use of any copies of copyrighted images that they may create from the dataset.
+
+2. Any commercial use of COCO-WholeBody dataset is not allowed. 
+
+
 ## Compare with other popular datasets.
 
 Overview of some popular public datasets for 2D keypoint estimation in RGB images. 
