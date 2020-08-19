@@ -69,6 +69,7 @@ Kpt stands for keypoints, and \#Kpt means the annotated number.
 | AFLW [15]        | 25K    | 19    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
 | COFW [16]        | 1852   | 29    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
 | 300W [17]        | 3837   | 68    |   ✔️  |          |          |    ✔️     |          |          |    ✔️     | -     |
+| Halpe[27]        | 43K    | 136   |   ✔️  |   ✔️      |    ✔️     |    ✔️     |    ✔️     |    ✔️     |    ✔️     | 50K  |
 | COCO-WholeBody   | 200K   | 133   |   ✔️  |   ✔️      |    ✔️     |    ✔️     |    ✔️     |    ✔️     |    ✔️     | 250K  |
 
 
@@ -158,4 +159,5 @@ If you use this dataset in your project, please cite this paper.
 [24] Kowalski,M.,Naruniec,J.,Trzcinski,T.:Deepalignmentnetwork:Aconvolutional neural network for robust face alignment. In: IEEE Conference on Computer Vision and Pattern Recognition Workshop (2017)
 [25] Valle, R., Buenaposada, J.M., Valdes, A., Baumela, L.: A deeply-initialized coarse- to-fine ensemble of regression trees for face alignment. In: Proceedings of the Eu- ropean Conference on Computer Vision (ECCV) (2018)
 [26] Sun, K., Zhao, Y., Jiang, B., Cheng, T., Xiao, B., Liu, D., Mu, Y., Wang, X., Liu, W., Wang, J.: High-resolution representations for labeling pixels and regions. arXiv preprint arXiv:1904.04514 (2019)
+[27] Fang, H.S., Li, J., Tang, H., Xu, C., Zhu, H., Li, Y., Xiu, Y., Lu, C.: https://github.com/Fang-Haoshu/Halpe-FullBody (2020)
 ```
