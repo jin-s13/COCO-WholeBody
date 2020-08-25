@@ -28,6 +28,7 @@ its left corner and the width and the height. The box coordinates are measured f
 
 The whole-body keypoint annotation has similar format as "keypoints" in COCO. 
 In addition to 17 body keypoints, we have 68 face keypoints, 21 lefthand keypoints, 21 righthand keypoints, 6 foot keypoints.
+Note that some keypoints may have `float` keypoint visibility. In such cases, `v>0` means that the keypoint is reliable.
 
 The validity of the face/hand/foot are used to minimize the labelling uncertainty. 
 Only if the face/hand images are clear enough for keypoint labeling (for annotators), the validity is True, otherwise False.
