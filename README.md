@@ -1,6 +1,6 @@
 # COCO-WholeBody
 
-This is the official repo for ECCV2020 paper ["Whole-Body Human Pose Estimation in the Wild"](https://arxiv.org/abs/2007.11858). 
+This is the official repo for ECCV2020 paper ["Whole-Body Human Pose Estimation in the Wild"](https://arxiv.org/abs/2007.11858). The slides of this work can be found in [Slides](https://drive.google.com/file/d/1nebo1h07BwKDhomWy4n98X4cJ1qHVy2X/view?usp=sharing).
 The repo contains COCO-WholeBody annotations proposed in this paper.
 
 ## What is COCO-WholeBody? 
