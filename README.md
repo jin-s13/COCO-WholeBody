@@ -28,6 +28,7 @@ The data format is defined in [DATA_FORMAT](data_format.md).
 
 
 ### Evaluation
+
 We provide evaluation tools for COCO-WholeBody dataset. Our evaluation tools is developed based on [@cocodataset/cocoapi](https://github.com/cocodataset/cocoapi). 
 
 We also provide an example groundtruth file (example_gt.json) and an example pred file (example_pred.json). 
@@ -35,6 +36,15 @@ We also provide an example groundtruth file (example_gt.json) and an example pre
 Evaluate on COCO-WholeBody by running the following line:
 
 `python evaluation/evaluation_wholebody.py --gt_file evaluation/example_gt.json --res_file evaluation/example_pred.json`
+
+#### Update:
+
+[2020.09.15] The evaluation tool is integrated into [Extended COCO API](https://github.com/jin-s13/xtcocoapi) for version>=1.5
+
+To install from pip:
+```shell
+pip install xtcocotools
+```
 
 ### Terms of Use
 
