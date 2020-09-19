@@ -3,6 +3,17 @@
 This is the official repo for ECCV2020 paper ["Whole-Body Human Pose Estimation in the Wild"](https://arxiv.org/abs/2007.11858). The slides of this work can be found in [Slides](https://drive.google.com/file/d/1nebo1h07BwKDhomWy4n98X4cJ1qHVy2X/view?usp=sharing).
 The repo contains COCO-WholeBody annotations proposed in this paper.
 
+## News
+
+[2020.09.19] We have supported COCO-WholeBody in [MMPose](https://github.com/open-mmlab/mmpose). A much stronger baseline model [dark_pose_hrnet_w48+](https://github.com/open-mmlab/mmpose/tree/master/configs/top_down/darkpose) with WholeBody AP 66.1% is provided for research purpose.
+
+[2020.09.15] The evaluation tool is integrated into [Extended COCO API](https://github.com/jin-s13/xtcocoapi) for version>=1.5
+
+To install from pip:
+```shell
+pip install xtcocotools
+```
+
 ## What is COCO-WholeBody? 
 
 COCO-WholeBody dataset is the first large-scale benchmark for whole-body pose estimation. 
@@ -36,15 +47,6 @@ We also provide an example groundtruth file (example_gt.json) and an example pre
 Evaluate on COCO-WholeBody by running the following line:
 
 `python evaluation/evaluation_wholebody.py --gt_file evaluation/example_gt.json --res_file evaluation/example_pred.json`
-
-#### Update:
-
-[2020.09.15] The evaluation tool is integrated into [Extended COCO API](https://github.com/jin-s13/xtcocoapi) for version>=1.5
-
-To install from pip:
-```shell
-pip install xtcocotools
-```
 
 ### Terms of Use
 
