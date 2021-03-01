@@ -79,6 +79,11 @@ class MYeval_wholebody:
         for gt in gts:
             self._gts[gt['image_id'], gt['category_id']].append(gt)
         for dt in dts:
+            d = np.array(dt['keypoints'] + dt['foot_kpts'] + dt['face_kpts'] + dt['lefthand_kpts'] + dt['righthand_kpts'])
+            vd = d[2::3]
+            k2 = np.count_nonzero(vd > 0)
+            if k2 == 0:
+                continue
             self._dts[dt['image_id'], dt['category_id']].append(dt)
         self.evalImgs = defaultdict(list)   # per-image per-category evaluation results
         self.eval     = {}                  # accumulated evaluation results
