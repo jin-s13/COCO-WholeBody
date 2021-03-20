@@ -19,12 +19,12 @@ Additional fields include:
 
 1) bboxes: `face_box`, `lefthand_box`, `righthand_box` and 
 
-2) whole-body keypoints: `face_kpts`, `lefthand_kpts`, `righthand_kpts`, `foot_kpts` and
+2) whole-body keypoints: `foot_kpts`, `face_kpts`, `lefthand_kpts`, `righthand_kpts` and
 
 3) validity: `face_valid`, `lefthand_valid`, `righthand_valid`, `foot_valid`.
 
 We provide boxes for face/hands. The box is a length 4 array (x, y, w, h), indicating 
-its left corner and the width and the height. The box coordinates are measured from the top left image corner and are 0-indexed.
+its top left corner and the width and the height. The box coordinates are measured from the top left image corner and are 0-indexed.
 
 The whole-body keypoint annotation has similar format as "keypoints" in COCO. 
 In addition to 17 body keypoints, we have 68 face keypoints, 21 lefthand keypoints, 21 righthand keypoints, 6 foot keypoints.
@@ -35,7 +35,6 @@ Only if the face/hand images are clear enough for keypoint labeling (for annotat
 Invalid cases may include severely blur or occlusion. We only label keypoints/boxes for valid cases. 
 Invalid boxes/keypoints are simply set as all-zero arrays.
 
-
 ```
 annotation{
 
@@ -43,10 +42,10 @@ annotation{
 "lefthand_box": list([x, y, w, h]),
 "righthand_box": list([x, y, w, h]),
 
+"foot_kpts": list([x, y, v] * 6),
 "face_kpts": list([x, y, v] * 68),
 "lefthand_kpts": list([x, y, v] * 21),
 "righthand_kpts": list([x, y, v] * 21),
-"foot_kpts": list([x, y, v] * 6),
 
 "face_valid": bool,
 "lefthand_valid": bool,
@@ -61,24 +60,30 @@ categories[{
 }]
 ```
 
-
 ### Result File Format
-
 
 Note: keypoint coordinates are floats measured from the top left image corner (and are 0-indexed). 
 We recommend rounding coordinates to the nearest pixel to reduce file size. 
-Note also that the visibility flags vi are not currently used (except for controlling visualization), 
-we recommend simply setting vi=1.
+Note that the visibility flags `vi` indicate the confidence of the corresponding keypoints. 
+We recommend setting `vi=1` for visible and confident predictions, and `vi=0` for invisible or uncertain ones. 
+As we evaluate keypoints of different whole-body parts (body, foot, face, lefthand and righthand) individually, 
+we require a score for each part. 
+The "score" field indicates the whole-body score.
 
  ```
 [{
 "image_id": int,
 "category_id": int,
 "keypoints": list([x, y, v] * 17),
-"lefthand_kpts": list([x, y, v] * 21),
-"righthand_kpts": list([x, y, v] * 21),
 "foot_kpts": list([x, y, v] * 6),
 "face_kpts": list([x, y, v] * 68),
+"lefthand_kpts": list([x, y, v] * 21),
+"righthand_kpts": list([x, y, v] * 21),
+"body_score": float,
+"foot_score": float,
+"face_score": float,
+"lefthand_score": float,
+"righthand_score": float,
 "score": float,
 }]
 ```
