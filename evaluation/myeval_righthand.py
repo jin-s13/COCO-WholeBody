@@ -134,7 +134,7 @@ class MYeval_righthand:
             dt = [_ for cId in p.catIds for _ in self._dts[imgId,cId]]
         if len(gt) == 0 and len(dt) ==0:
             return []
-        inds = np.argsort([-d['score'] for d in dt], kind='mergesort')
+        inds = np.argsort([-d['righthand_score'] for d in dt], kind='mergesort')
         dt = [dt[i] for i in inds]
         if len(dt) > p.maxDets[-1]:
             dt=dt[0:p.maxDets[-1]]
@@ -158,7 +158,7 @@ class MYeval_righthand:
         # dimention here should be Nxm
         gts = self._gts[imgId, catId]
         dts = self._dts[imgId, catId]
-        inds = np.argsort([-d['score'] for d in dts], kind='mergesort')
+        inds = np.argsort([-d['righthand_score'] for d in dts], kind='mergesort')
         dts = [dts[i] for i in inds]
         if len(dts) > p.maxDets[-1]:
             dts = dts[0:p.maxDets[-1]]
@@ -221,7 +221,7 @@ class MYeval_righthand:
         # sort dt highest score first, sort gt ignore last
         gtind = np.argsort([g['_ignore'] for g in gt], kind='mergesort')
         gt = [gt[i] for i in gtind]
-        dtind = np.argsort([-d['score'] for d in dt], kind='mergesort')
+        dtind = np.argsort([-d['righthand_score'] for d in dt], kind='mergesort')
         dt = [dt[i] for i in dtind[0:maxDet]]
         iscrowd = [int(o['iscrowd']) for o in gt]
         # load computed ious
@@ -272,7 +272,7 @@ class MYeval_righthand:
                 'gtIds':        [g['id'] for g in gt],
                 'dtMatches':    dtm,
                 'gtMatches':    gtm,
-                'dtScores':     [d['score'] for d in dt],
+                'dtScores':     [d['righthand_score'] for d in dt],
                 'gtIgnore':     gtIg,
                 'dtIgnore':     dtIg,
             }
