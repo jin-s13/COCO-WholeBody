@@ -66,9 +66,10 @@ Note: keypoint coordinates are floats measured from the top left image corner (a
 We recommend rounding coordinates to the nearest pixel to reduce file size. 
 Note that the visibility flags `vi` indicate the confidence of the corresponding keypoints. 
 We recommend setting `vi=1` for visible and confident predictions, and `vi=0` for invisible or uncertain ones. 
-As we evaluate keypoints of different whole-body parts (body, foot, face, lefthand and righthand) individually, 
-we require a score for each part. 
-The "score" field indicates the whole-body score.
+As we evaluate keypoints of different whole-body parts (body, foot, face, lefthand, righthand and wholebody) individually, 
+we require a score for each part.
+Note that, we do not change the existing fields in the COCO keypoint dataset, 
+and use the "score" field to indicate the body score.
 
  ```
 [{
@@ -79,11 +80,11 @@ The "score" field indicates the whole-body score.
 "face_kpts": list([x, y, v] * 68),
 "lefthand_kpts": list([x, y, v] * 21),
 "righthand_kpts": list([x, y, v] * 21),
-"body_score": float,
+"score": float,
 "foot_score": float,
 "face_score": float,
 "lefthand_score": float,
 "righthand_score": float,
-"score": float,
+"wholebody_score": float,
 }]
 ```

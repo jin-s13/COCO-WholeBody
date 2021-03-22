@@ -28,7 +28,6 @@ def parse_args():
 
 def test_body(coco,coco_dt):
     print('body mAP ----------------------------------')
-    check_part_score(coco_dt, 'body')
     coco_eval = MYeval_body(coco, coco_dt, 'keypoints')
     coco_eval.params.useSegm = None
     coco_eval.evaluate()
@@ -78,6 +77,7 @@ def test_righthand(coco,coco_dt):
 
 def test_wholebody(coco,coco_dt):
     print('wholebody mAP ----------------------------------')
+    check_part_score(coco_dt, 'wholebody')
     coco_eval = MYeval_wholebody(coco, coco_dt, 'keypoints')
     coco_eval.params.useSegm = None
     coco_eval.evaluate()
