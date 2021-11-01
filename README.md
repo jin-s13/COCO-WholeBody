@@ -19,6 +19,8 @@ pip install xtcocotools
 
 COCO-WholeBody dataset is the first large-scale benchmark for whole-body pose estimation. 
 It is an extension of [COCO 2017 dataset](https://cocodataset.org/#keypoints-2017) with the same train/val split as COCO.
+Note that in our ECCV paper, all experiments are conducted on COCO-WholeBody v0.5. We further improve the annotation of the proposed dataset from v0.5 to v1.0.
+The benchmark results for COCO-WholeBody V1.0 can be found in [MMPose](https://mmpose.readthedocs.io/en/latest/topics/wholebody.html#coco-wholebody-dataset).
 
 Here is an example of one annotated image.
 <img src="imgs/Fig1_example.png" width = "800" height = "400">
@@ -86,7 +88,7 @@ Kpt stands for keypoints, and \#Kpt means the annotated number.
 | COCO-WholeBody   | 200K   | 133   |   ✔️  |   ✔️      |    ✔️     |    ✔️     |    ✔️     |    ✔️     |    ✔️     | 250K  |
 
 
-## COCO-WholeBody Benchmark
+## COCO-WholeBody Benchmark (v0.5)
 
 Whole-body pose estimation results on our WholeBody benchmark.
 
@@ -104,7 +106,7 @@ Whole-body pose estimation results on our WholeBody benchmark.
 |ZoomNet        | 0.743 | 0.802 | 0.798 | 0.869 | 0.623 | 0.701 | 0.401 | 0.498 | 0.541 | 0.658 |
 
 
-## Pre-training on COCO-WholeBody for face/hand keypoint estimation
+## Pre-training on COCO-WholeBody v0.5 for face/hand keypoint estimation
 
 WholeBody-Face (WBF) & WholeBody-Hand (WBH) are subsets of COCO-WholeBody.
 
