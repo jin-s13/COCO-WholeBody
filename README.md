@@ -38,7 +38,7 @@ For each person, we annotate 4 types of bounding boxes (person box, face box, le
 ### Download
 Images can be downloaded from [COCO 2017 website](https://cocodataset.org/#keypoints-2017).
 
-COCO-WholeBody annotations for [Train](https://drive.google.com/file/d/1thErEToRbmM9uLNi1JXXfOsaS5VK2FXf/view?usp=sharing) / [Validation](https://drive.google.com/file/d/1N6VgwKnj8DeyGXCvp1eYgNbRmw6jdfrb/view?usp=sharing) (Google Drive).
+COCO-WholeBody annotations for [Train](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EfE4vxMce2NNiEfJUySLTmwBS5Ay2rbp5-7sHxN6BoldFw?e=tKTLi2) / [Validation](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EQuxJ51ZSXVPv6EeGnLT65YBvkaVQLAMRYW6pnk6sobfPA?e=jjV2u4) (OneDrive).
 
 ### Annotation Format
 The data format is defined in [DATA_FORMAT](data_format.md).
