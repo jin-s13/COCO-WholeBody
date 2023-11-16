@@ -40,11 +40,13 @@ Images can be downloaded from [COCO 2017 website](https://cocodataset.org/#keypo
 
 COCO-WholeBody annotations for [Train](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EfE4vxMce2NNiEfJUySLTmwBS5Ay2rbp5-7sHxN6BoldFw?e=tKTLi2) / [Validation](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EQuxJ51ZSXVPv6EeGnLT65YBvkaVQLAMRYW6pnk6sobfPA?e=jjV2u4) (OneDrive).
 
-Alternatively, we also provide the BaiduPan download link.
+Alternatively, we also provide the BaiduPan download link for the annotation files.
 
 BaiduPan Link: https://pan.baidu.com/s/19daDw9JeMlOnfNGZ2pB5Gw?pwd=pu6j      
 
 Password: pu6j
+
+Note: Our dataset is also available at [OpenXLab](https://openxlab.org.cn/datasets/OpenDataLab/COCO-WholeBody).
 
 ### Annotation Format
 The data format is defined in [DATA_FORMAT](data_format.md).
