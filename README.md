@@ -38,13 +38,9 @@ For each person, we annotate 4 types of bounding boxes (person box, face box, le
 ### Download
 Images can be downloaded from [COCO 2017 website](https://cocodataset.org/#keypoints-2017).
 
-COCO-WholeBody annotations for [Train](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EfE4vxMce2NNiEfJUySLTmwBS5Ay2rbp5-7sHxN6BoldFw?e=tKTLi2) / [Validation](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EQuxJ51ZSXVPv6EeGnLT65YBvkaVQLAMRYW6pnk6sobfPA?e=jjV2u4) (OneDrive).
-
-Alternatively, we also provide the BaiduPan download link for the annotation files.
-
-BaiduPan Link: https://pan.baidu.com/s/19daDw9JeMlOnfNGZ2pB5Gw?pwd=pu6j      
-
-Password: pu6j
+- OneDrive: COCO-WholeBody annotations for [Train](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EfE4vxMce2NNiEfJUySLTmwBS5Ay2rbp5-7sHxN6BoldFw?e=tKTLi2) / [Validation](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/js20_connect_hku_hk/EQuxJ51ZSXVPv6EeGnLT65YBvkaVQLAMRYW6pnk6sobfPA?e=jjV2u4) (OneDrive).
+- Google Drive: COCO-WholeBody annotations for [Train](https://drive.google.com/file/d/1thErEToRbmM9uLNi1JXXfOsaS5VK2FXf/view?usp=sharing) / [Validation](https://drive.google.com/file/d/1N6VgwKnj8DeyGXCvp1eYgNbRmw6jdfrb/view?usp=sharing) (Google Drive).
+- BaiduPan: COCO-WholeBody annotations for [Train&Validation](https://pan.baidu.com/s/19daDw9JeMlOnfNGZ2pB5Gw?pwd=pu6j), with Password: pu6j
 
 Note: Our dataset is also available at [OpenXLab](https://openxlab.org.cn/datasets/OpenDataLab/COCO-WholeBody).
 
